@@ -4,17 +4,28 @@
   <talk subject="astronomy">
     <title>Happy Birthday Hubble</title>
     <speaker>Dr. Stephen Wilkins</speaker>
-    <abstract></abstract>
-    <url></url>
+    <date>Thursday, 23 April 2020 - 7:00PM</date>
+    <abstract>x</abstract>
+    <youtube></youtube>
+    <url>x</url>
   </talk>
 
   <talk subject="astronomy">
-    <title>another astronomy talk</title>
+    <title>The Origin of the Elements</title>
     <speaker>Dr. Stephen Wilkins</speaker>
-    <abstract></abstract>
-    <url></url>
+    <date>Thursday, 23 April 2020 - 7:00PM</date>
+    <abstract>x</abstract>
+    <youtube></youtube>
+    <url>x</url>
   </talk>
 
+  <talk subject="quantum">
+    <title>A quantum talk</title>
+    <speaker>Prof. Someone Else</speaker>
+    <date>Thursday, 23 April 2020 - 7:00PM</date>
+    <abstract>x</abstract>
+    <youtube></youtube>
+    <url>x</url>
+  </talk>
 
-
-</talk>
+</talks>
