@@ -28,4 +28,59 @@
     <url>x</url>
   </talk>
 
+  <talk subject="quantum">
+    <title>A quantum talk</title>
+    <speaker>Prof. Someone Else</speaker>
+    <date>Thursday, 23 April 2020 - 7:00PM</date>
+    <abstract>x</abstract>
+    <youtube></youtube>
+    <url>x</url>
+  </talk>
+
+  <talk subject="particle">
+    <title>A quantum talk</title>
+    <speaker>Prof. Someone Else</speaker>
+    <date>Thursday, 23 April 2020 - 7:00PM</date>
+    <abstract>x</abstract>
+    <youtube></youtube>
+    <url>x</url>
+  </talk>
+
+  <talk subject="materials">
+    <title>A materials talk</title>
+    <speaker>Prof. Someone Else</speaker>
+    <date>Thursday, 23 April 2020 - 7:00PM</date>
+    <abstract>x</abstract>
+    <youtube></youtube>
+    <url>x</url>
+  </talk>
+
+  <talk subject="mathematics">
+    <title>A mathematics talk</title>
+    <speaker>Prof. Someone Else</speaker>
+    <date>Thursday, 23 April 2020 - 7:00PM</date>
+    <abstract>x</abstract>
+    <youtube></youtube>
+    <url>x</url>
+  </talk>
+
+  <talk subject="chemistry">
+    <title>A chemistry talk</title>
+    <speaker>Prof. Someone Else</speaker>
+    <date>Thursday, 23 April 2020 - 7:00PM</date>
+    <abstract>x</abstract>
+    <youtube></youtube>
+    <url>x</url>
+  </talk>
+
+  <talk subject="biology">
+    <title>A biology talk</title>
+    <speaker>Prof. Someone Else</speaker>
+    <date>Thursday, 23 April 2020 - 7:00PM</date>
+    <abstract>x</abstract>
+    <youtube></youtube>
+    <url>x</url>
+  </talk>
+
+
 </talks>

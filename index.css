@@ -1,11 +1,24 @@
 
 
-.dot {
+
+
+
+
+
+#nav {
+  position:fixed;
+  top: 0px;
   height: 100px;
-  width: 100px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
+  width:100%;
+  background-color: #FFF;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13;
+}
+
+#main {
+  position:absolute;
+  top: 100px;
+  width:100%;
 }
 
 
@@ -15,6 +28,15 @@
     padding: 10px;
     text-align: center;
   }
+
+  .dot {
+    height: 100px;
+    width: 100px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
 
   .subject {
     font-family: 'Open Sans', sans-serif;

@@ -12,7 +12,7 @@ function loadXMLDoc() {
 
 function make_talk_list(chosen_subject) {
 
-  var colors = {"astronomy": "#682CBF", "quantum": "#3E49BB"};
+  var colors = {"astronomy": "682CBF", "quantum": "3E49BB", "particle": "526EFF", "materials": "32C12C", "mathematics": "FFEF00", "chemistry": "FF5500", "biology": "D40C00"};
 
   x = xmlDoc.getElementsByTagName("title");
   txt = "";
@@ -20,7 +20,7 @@ function make_talk_list(chosen_subject) {
     subject = xmlDoc.getElementsByTagName('talk')[i].getAttribute('subject');
     if (chosen_subject==subject) {
       txt += '<div class="talk">';
-      txt += '<div class="talk_subject" style="background-color: '+colors[subject]+';"></div>';
+      txt += '<div class="talk_subject" style="background-color: #'+colors[subject]+';"></div>';
       txt += '<br><br><br><br><br><br><br>';
       txt += '<span class="talk_title">'+x[i].childNodes[0].nodeValue+'</span><br>';
       txt += '<span class="talk_speaker">'+xmlDoc.getElementsByTagName('speaker')[i].childNodes[0].nodeValue+'</span><br>';
@@ -36,14 +36,14 @@ function make_talk_list(chosen_subject) {
 
 function make_ALL_talk_list() {
 
-  var colors = {"astronomy": "#682CBF", "quantum": "#3E49BB"};
+  var colors = {"astronomy": "682CBF", "quantum": "3E49BB", "particle": "526EFF", "materials": "32C12C", "mathematics": "FFEF00", "chemistry": "FF5500", "biology": "D40C00"};
 
   x = xmlDoc.getElementsByTagName("title");
   txt = "";
   for (i = 0; i< x.length; i++) {
     subject = xmlDoc.getElementsByTagName('talk')[i].getAttribute('subject');
     txt += '<div class="talk">';
-    txt += '<div class="talk_subject" style="background-color: '+colors[subject]+';"></div>';
+    txt += '<div class="talk_subject" style="background-color: #'+colors[subject]+';"></div>';
     txt += '<br><br><br><br><br><br><br>';
     txt += '<span class="talk_title">'+x[i].childNodes[0].nodeValue+'</span><br>';
     txt += '<span class="talk_speaker">'+xmlDoc.getElementsByTagName('speaker')[i].childNodes[0].nodeValue+'</span><br>';
