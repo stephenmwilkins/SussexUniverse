@@ -14,6 +14,7 @@ function loadXMLDoc() {
 function make_talk_list(chosen_subject) {
 
   var colors = {"astronomy": "682CBF", "quantum": "3E49BB", "particle": "526EFF", "materials": "32C12C", "mathematics": "FFEF00", "chemistry": "FF5500", "biology": "D40C00"};
+  var subjects = ['all','astronomy','quantum','particle','materials','mathematics','chemistry','biology'];
 
   x = xmlDoc.getElementsByTagName("title");
   txt = "";
@@ -23,11 +24,16 @@ function make_talk_list(chosen_subject) {
       txt += '<div class="talk" onclick = "show_talk('+i+')";>';
       txt += '<img class="talk_image" src="images/talks/'+xmlDoc.getElementsByTagName('name')[i].childNodes[0].nodeValue+'@small.jpg">';
 
-      if (xmlDoc.getElementsByTagName('youtube')[i].childNodes[0].nodeValue!='0') {
+      status = xmlDoc.getElementsByTagName('talk')[i].getAttribute('status');
+      if (status=='0') {
+        txt += '<div class="talk_status">COMING SOON</div>';
+      } else if (status=='1') {
         txt += '<div class="talk_status">WATCH NOW</div>';
       } else {
-        txt += '<div class="talk_status">COMING SOON</div>';
+        txt += '<div class="talk_status">NOT YET ONLINE</div>';
       }
+
+
       txt += '<div class="talk_subject" style="background-color: #'+colors[subject]+';"><img style="width:50px;" src="images/'+subject+'@4x.png"></div>';
       txt += '<div class="talk_info">';
       txt += '<span class="talk_title">'+x[i].childNodes[0].nodeValue+'</span><br>';
@@ -39,6 +45,12 @@ function make_talk_list(chosen_subject) {
     }
   }
   document.getElementById("talks").innerHTML = txt;
+  for (var i = 0; i < subjects.length; i++) {
+    $("#subject-"+subjects[i]).css("opacity", "0.5");
+    console.log(subjects[i]);
+  }
+  $("#subject-"+chosen_subject).css("opacity", "1.0");
+
 
 }
 
@@ -55,11 +67,15 @@ function make_ALL_talk_list() {
     txt += '<div class="talk" onclick = "show_talk('+i+')";>';
     txt += '<img class="talk_image" src="images/talks/'+xmlDoc.getElementsByTagName('name')[i].childNodes[0].nodeValue+'@small.jpg">';
 
-    if (xmlDoc.getElementsByTagName('youtube')[i].childNodes[0].nodeValue!='0') {
+    status = xmlDoc.getElementsByTagName('talk')[i].getAttribute('status');
+    if (status=='0') {
+      txt += '<div class="talk_status">COMING SOON</div>';
+    } else if (status=='1') {
       txt += '<div class="talk_status">WATCH NOW</div>';
     } else {
-      txt += '<div class="talk_status">COMING SOON</div>';
+      txt += '<div class="talk_status">NOT YET ONLINE</div>';
     }
+
     txt += '<div class="talk_subject" style="background-color: #'+colors[subject]+';"><img style="width:50px;" src="images/'+subject+'@4x.png"></div>';
     txt += '<div class="talk_info">';
     txt += '<span class="talk_title">'+x[i].childNodes[0].nodeValue+'</span><br>';
@@ -70,23 +86,23 @@ function make_ALL_talk_list() {
   }
   document.getElementById("talks").innerHTML = txt;
 
+  var subjects = ['all','astronomy','quantum','particle','materials','mathematics','chemistry','biology'];
+
+  for (var i = 0; i < subjects.length; i++) {
+    $("#subject-"+subjects[i]).css("opacity", "0.5");
+    console.log(subjects[i]);
+  }
+  $("#subject-all").css("opacity", "1.0");
+
+
 }
 
-// function show() {
-//
-//   console.log('here');
-//   $("#main_talk").css("visibility", "visible");
-//   $("#main").css("visibility", "hidden");
-//
-// }
 
 function show_talk(i) {
 
+  status = xmlDoc.getElementsByTagName('talk')[i].getAttribute('status');
 
-
-
-  var youtube = xmlDoc.getElementsByTagName('youtube')[i].childNodes[0].nodeValue;
-  if (youtube!='0') {
+  if (status=='1') {
     document.getElementById("talk_window").innerHTML = '<div id="videoWrapper"><iframe src="https://www.youtube.com/embed/'+youtube+'" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>';
   } else
   {

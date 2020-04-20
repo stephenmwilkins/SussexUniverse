@@ -27,6 +27,12 @@ a {
 
 
 
+/* var colors = {"astronomy": "682CBF", "quantum": "3E49BB", "particle": "526EFF", "materials": "32C12C", "mathematics": "FFEF00", "chemistry": "FF5500", "biology": "D40C00"}; */
+
+
+
+
+
 #nav_container {
   width:100%;
   background-color: #EEE;
@@ -93,9 +99,32 @@ a {
     max-width: 1100px;
   }
 
+  #subject-all {
+      background: linear-gradient(
+      90deg,
+      #682CBF,
+      #682CBF 10px,
+      #3E49BB 10px,
+      #3E49BB 20px,
+      #526EFF 20px,
+      #526EFF 30px,
+      #32C12C 30px,
+      #32C12C 40px,
+      #FFEF00 40px,
+      #FFEF00 50px,
+      #FF5500 50px,
+      #FF5500 60px,
+      #D40C00 60px,
+      #D40C00 70px);
+      height: 70px;
+      width: 70px;
+      border-radius: 50%;
+      display: inline-block;
+          }
+
   .dot {
-    height: 80px;
-    width: 80px;
+    height: 70px;
+    width: 70px;
     background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
@@ -112,15 +141,15 @@ a {
     font-size: 12;
     margin: auto;
     display: inline-block;
-    width: 80px;
-    height: 90px;
-    padding: 5px;
+    width: 70px;
+    height: 85px;
+    padding: 10px;
   }
 
 
   .subject_image {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
   }
 
 
