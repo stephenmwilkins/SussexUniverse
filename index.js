@@ -103,7 +103,7 @@ function show_talk(i) {
   status = xmlDoc.getElementsByTagName('talk')[i].getAttribute('status');
 
   if (status=='1') {
-    document.getElementById("talk_window").innerHTML = '<div id="videoWrapper"><iframe src="https://www.youtube.com/embed/'+youtube+'" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>';
+    document.getElementById("talk_window").innerHTML = '<div id="videoWrapper"><iframe src="https://www.youtube.com/embed/'+xmlDoc.getElementsByTagName('youtube')[i].childNodes[0].nodeValue+'" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>';
   } else
   {
     document.getElementById("talk_window").innerHTML = '<img width="100%" src="images/talks/'+xmlDoc.getElementsByTagName('name')[i].childNodes[0].nodeValue+'@preview.jpg"><div id="talk_status">COMING SOON</div>';
