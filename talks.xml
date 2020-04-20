@@ -1,86 +1,117 @@
 <!-- <?xml version="1.0" encoding="UTF-8"?> -->
 <talks>
 
+
+  <talk subject="mathematics">
+    <name>dynamical-systems</name>
+    <title>Dynamical Systems: Attractive and Chaotic</title>
+    <speaker>Prof. Peter Giesl</speaker>
+    <date>Thursday, 7 May 2020 - 7:00PM</date>
+    <abstract>x</abstract>
+    <youtube>0</youtube>
+    <url>x</url>
+  </talk>
+
+  <talk subject="mathematics">
+    <name>epidemics</name>
+    <title>Epidemics: untangling the mysteries of mathematical modelling</title>
+    <speaker>Dr Yuliya Kyrychko</speaker>
+    <date>Thursday, 30 April 2020 - 7:00PM</date>
+    <abstract>“Flattening the curve”, “time to peak”, “pandemic”, “exponential growth” - in recent weeks it was hard to escape these expressions due to the current COVID-19 outbreak. One of the powerful tools behind these terms is the art of mathematical modelling. Mathematical modelling has been used extensively to help predict the development and potential outcomes of recent diseases, such as SARS, Ebola and now COVID-19. So what is mathematically modelling and how is it done? In this talk I will use simple models to explain the modelling process and show a few examples of their applications.</abstract>
+    <youtube>0</youtube>
+    <url>x</url>
+  </talk>
+
   <talk subject="astronomy">
+    <name>happy-birthday-hubble</name>
     <title>Happy Birthday Hubble</title>
     <speaker>Dr. Stephen Wilkins</speaker>
     <date>Thursday, 23 April 2020 - 7:00PM</date>
-    <abstract>x</abstract>
-    <youtube></youtube>
+    <abstract>The Hubble Space Telescope was launched into orbit almost 30 years ago. Thanks in part to its unique position above the Earth's atmosphere and five manned servicing missions it has maintained its position as one of the world’s premier observatories to this day. Over its 30 year career Hubble has had an unprecedented scientific and cultural impact; discoveries extending from the outer Solar System to the edge of the observable Universe have revolutionised our understanding of astronomy and cosmology while its spectacular images have inspired the wider public’s wonder.
+</abstract>
+    <youtube>0</youtube>
     <url>x</url>
   </talk>
 
   <talk subject="astronomy">
+    <name>origin-of-the-elements</name>
     <title>The Origin of the Elements</title>
     <speaker>Dr. Stephen Wilkins</speaker>
     <date>Thursday, 23 April 2020 - 7:00PM</date>
-    <abstract>x</abstract>
-    <youtube></youtube>
+    <abstract>In this talk, coinciding with the UNESCO International Year of the Periodic Table, Dr Wilkins will discuss the astrophysical origins of the chemical elements, almost all of which have an origin ranging from the big bang, to exploding white dwarfs, the collapse of massive stars, and the merger of ultra-compact objects, neutron stars. This final mechanism is responsible for many of the heaviest and rarest elements including gold, silver, and uranium, and was only recently confirmed through observations of a merger event first identified using gravitational waves.</abstract>
+    <youtube>SvjSxS4AKqM</youtube>
     <url>x</url>
   </talk>
 
   <talk subject="quantum">
+    <name>quantum</name>
     <title>A quantum talk</title>
     <speaker>Prof. Someone Else</speaker>
     <date>Thursday, 23 April 2020 - 7:00PM</date>
     <abstract>x</abstract>
-    <youtube></youtube>
+    <youtube>0</youtube>
     <url>x</url>
   </talk>
 
   <talk subject="quantum">
-    <title>A quantum talk</title>
-    <speaker>Prof. Someone Else</speaker>
+    <name>quantum</name>
+    <title>Another quantum talk</title>
+    <speaker>Dr. Anne Other</speaker>
     <date>Thursday, 23 April 2020 - 7:00PM</date>
     <abstract>x</abstract>
-    <youtube></youtube>
+    <youtube>0</youtube>
     <url>x</url>
   </talk>
 
   <talk subject="particle">
-    <title>A quantum talk</title>
+    <name>particle</name>
+    <title>A partcile talk</title>
     <speaker>Prof. Someone Else</speaker>
     <date>Thursday, 23 April 2020 - 7:00PM</date>
     <abstract>x</abstract>
-    <youtube></youtube>
+    <youtube>0</youtube>
     <url>x</url>
   </talk>
 
-  <talk subject="materials">
+  <!-- <talk subject="materials">
+    <name>happy-birthday-hubble</name>
     <title>A materials talk</title>
     <speaker>Prof. Someone Else</speaker>
     <date>Thursday, 23 April 2020 - 7:00PM</date>
     <abstract>x</abstract>
     <youtube></youtube>
     <url>x</url>
-  </talk>
+  </talk> -->
 
-  <talk subject="mathematics">
+  <!-- <talk subject="mathematics">
+    <name>mathematics</name>
     <title>A mathematics talk</title>
     <speaker>Prof. Someone Else</speaker>
     <date>Thursday, 23 April 2020 - 7:00PM</date>
     <abstract>x</abstract>
-    <youtube></youtube>
+    <youtube>0</youtube>
     <url>x</url>
-  </talk>
+  </talk> -->
 
-  <talk subject="chemistry">
+  <!-- <talk subject="chemistry">
+    <name>happy-birthday-hubble</name>
     <title>A chemistry talk</title>
     <speaker>Prof. Someone Else</speaker>
     <date>Thursday, 23 April 2020 - 7:00PM</date>
     <abstract>x</abstract>
     <youtube></youtube>
     <url>x</url>
-  </talk>
+  </talk> -->
 
-  <talk subject="biology">
+  <!-- <talk subject="biology">
+    <name>happy-birthday-hubble</name>
     <title>A biology talk</title>
     <speaker>Prof. Someone Else</speaker>
     <date>Thursday, 23 April 2020 - 7:00PM</date>
     <abstract>x</abstract>
     <youtube></youtube>
     <url>x</url>
-  </talk>
+  </talk> -->
 
 
 </talks>
