@@ -16,6 +16,8 @@ function use_params() {
 
   var searchParams = new URLSearchParams(window.location.search);
 
+  console.log(window.location.search);
+
   if (searchParams.has("talk")==true) {
     show_talk(searchParams.get("talk"));
   }
