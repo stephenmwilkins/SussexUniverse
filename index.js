@@ -4,7 +4,7 @@ function loadXMLDoc() {
     if (this.readyState == 4 && this.status == 200) {
       xmlDoc = this.responseXML;
       make_ALL_talk_list();
-      // use_params();
+      use_params();
     }
   };
   xmlhttp.open("GET", "./talks.xml", true);
