@@ -33,26 +33,62 @@ a {
 
 
 
-#nav_container {
+#header_container {
   width:100%;
   background-color: #EEE;
 }
 
-#nav {
+#header {
   margin: auto;
+  text-align:center;
   padding: 10px;
   width:90%;
   max-width: 900px;
 }
 
-#logo {
-  font-family: 'Quicksand', sans-serif;
-  font-size: 50;
+.header_element {
+  /* text-align:left; */
 }
 
-#nav_links {
-  font-size: 20;
+#logo {
+  width:100px;
+  vertical-align:middle;
+  padding: 10px;
 }
+
+#logo_text {
+  vertical-align:middle;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 70;
+}
+
+/* #tagline_text {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 25;
+} */
+
+#nowonline_text {
+  vertical-align:middle;
+  position:absolute;
+  left:100px;
+  top:100px;
+  font-family: 'Rubik', sans-serif;
+  font-size: 25;
+  color:#000;
+  opacity: 1.0;
+}
+
+/* #nowonline_text:hover {
+  opacity: 1.0;
+} */
+
+ #nowonline_logo {
+  vertical-align: middle;
+  width: 40px;
+  padding-right: 10px;
+}
+
+
 
 
 #about_container {
@@ -99,7 +135,7 @@ a {
     max-width: 900px;
   }
 
-  #subject-all {
+  .subject-all {
       background: linear-gradient(
       90deg,
       #682CBF,
@@ -125,16 +161,9 @@ a {
   .dot {
     height: 70px;
     width: 70px;
-    background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
-    opacity:0.5;
   }
-
-  .dot:hover {
-    opacity:1.0;
-  }
-
 
   .subject {
     font-family: 'Open Sans', sans-serif;
@@ -144,8 +173,26 @@ a {
     width: 70px;
     height: 85px;
     padding: 10px;
+    opacity:0.5;
+    filter: alpha(opacity=50);
+    cursor: pointer;
   }
 
+  .subject:hover {
+    opacity:1.0;
+  }
+
+  .subject_highlighted {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12;
+    margin: auto;
+    display: inline-block;
+    width: 70px;
+    height: 85px;
+    padding: 10px;
+    cursor: pointer;
+    opacity:1.0;
+  }
 
   .subject_image {
     width: 70px;
@@ -160,7 +207,7 @@ a {
 
 #talks {
   margin: auto;
-  width: 80%;
+  width: 90%;
   max-width: 1100px;
   padding: 20px 0px 20px 0px;
 }
@@ -178,6 +225,7 @@ a {
   position:relative;
   background-color: #000;
   vertical-align: text-bottom;
+  cursor: pointer;
 }
 
 .talk_image {
@@ -318,7 +366,19 @@ a {
   border-color: #FFF;
 }
 
-
+#zoom_status {
+  font-family: 'Rubik', sans-serif;
+  color: #FFF;
+  position: absolute;
+  padding: 5px 20px 5px 10px;
+  font-size: 50;
+  font-weight: bold;
+  top:100px;
+  background-color: #999;
+  opacity:1.0;
+  border:1px;
+  border-color: #FFF;
+}
 
 #talk_info_container {
   margin: 0 auto;
@@ -347,11 +407,21 @@ a {
 #talk_speaker {
   font-weight: bold;
   /* text-transform: uppercase; */
-  font-size: 22;
+  font-size: 26;
 }
 
 #talk_date {
-  font-size: 20;
+  font-size: 22;
+}
+
+#talk_website {
+  font-size: 18;
+  font-weight: bold;
+}
+
+#talk_zoom {
+  font-size: 18;
+  font-weight: bold;
 }
 
 #talk_abstract {
@@ -363,6 +433,7 @@ a {
 
 
 #footer_container {
+  margin: auto;
   background-color: #111;
   width:100%;
 
@@ -370,19 +441,40 @@ a {
 
 #footer {
   margin: auto;
+  text-align:center;
   padding: 10px;
-  width:80%;
-  max-width: 1100px;
+  width:90%;
+  max-width: 900px;
 }
 
-#footer {
-  margin: auto;
+.footer_section {
+  text-align:left;
+  display: inline-block;
+  vertical-align: top;
+  width:200px;
   padding: 10px;
-  width:80%;
-  max-width: 1100px;
 }
 
-#footer p {
+.footer_section h3 {
+  font-family: 'Rubik', sans-serif;
   font-size: 14;
-  color: #EEE;
+  color: #FFF;
+}
+
+.footer_section p {
+  font-size: 12;
+  color: #DDD;
+}
+
+
+.footer_social_logo {
+  display: inline-block;
+  vertical-align: center;
+  width: 42px;
+  opacity: 0.5;
+  padding: 5px;
+}
+
+.footer_social_logo:hover {
+  opacity: 1.0;
 }

@@ -18,32 +18,37 @@
   </head>
   <body onload="loadXMLDoc();">
 
-    <div id="nav_container">
-    <div id="nav">
-      <div id="logo">SUSSEX <b>UNIVERSE</b></div>
-  </div>
-  </div>
+    <!-- header -->
+
+    <div id="header_container">
+    <div id="header">
+
+      <div><img id="logo" src="images/logo_cat.png"><span id="logo_text">SUSSEX <b>UNIVERSE</b></span></div>
+
+      <!-- <a href="https://www.youtube.com/channel/UC0EJg0QOaBzolMegQFd5Xww"><div id="nowonline_text"><img id="nowonline_logo" src="images/social/youtube_social_icon_white.png"><span>NOW ONLINE</span></div></a>
+       -->
+    </div>
+    </div>
 
 
   <div id="about_container">
   <div id="about">
     <p> Sussex Universe is the free public lecture series from the <a href="http://www.sussex.ac.uk/mps/">School of Mathematical and Physical Sciences at the University of Sussex</a>. The lectures cover topics including <a href="">astronomy</a>, <a href="">quantum technology</a>, <a href="">particle physics</a>, <a href="">mathematics</a>, and <a href="">materials science</a>.</p>
     <p> <b>NOTE:</b> Normally lectures are held at the University however during the current Covid-19 pandemic lectures will be exclusively online for the foreseable future. Lectures will go online on our <a href="">YouTube channel</a> at the usual time of 7pm, and there will be a live Q&A after the talk with the speaker, via Zoom when the lecture finishes (around 7.30pm) - links for both will appear below 15 minutes before the talks are scheduled to start.</p>
-    <p>If you wish to keep up-to-date with our lecture series, and to recieve reminders about upcoming lectures and events, please fill in our keep-in-touch form for the general public.</p>
   </div>
   </div>
 
   <div id="subjects_container">
   <div id="select_container"><div id="select">SELECT SUBJECT</div></div>
   <div id="subjects">
-    <div class="subject" onclick = "make_ALL_talk_list();"><span id="subject-all"></span>ALL</div>
-    <div class="subject" onclick = "make_talk_list('astronomy');"><span id="subject-astronomy" class="dot" style="background-color: #682CBF;"><img class="subject_image" src="images/astronomy@4x.png"></span>ASTRONOMY</div>
-    <div class="subject" onclick = "make_talk_list('quantum');"><span id="subject-quantum" class="dot" style="background-color: #3E49BB;"><img class="subject_image" src="images/quantum@4x.png"></span>QUANTUM</div>
-    <div class="subject" onclick = "make_talk_list('particle');"><span id="subject-particle" class="dot" style="background-color: #526EFF;"><img class="subject_image" src="images/particle@4x.png"></span>PARTICLE</div>
-    <div class="subject" onclick = "make_talk_list('materials');"><span id="subject-materials" class="dot" style="background-color: #32C12C;"><img class="subject_image" src="images/materials@4x.png"></span>MATERIALS</div>
-    <div class="subject" onclick = "make_talk_list('mathematics');"><span id="subject-mathematics" class="dot" style="background-color: #FFEF00;"><img class="subject_image" src="images/mathematics@4x.png"></span>MATHEMATICS</div>
-    <div class="subject" onclick = "make_talk_list('chemistry');"><span id="subject-chemistry" class="dot" style="background-color: #FF5500;"><img class="subject_image" src="images/chemistry@4x.png"></span>CHEMISTRY</div>
-    <div class="subject" onclick = "make_talk_list('biology');"><span id="subject-biology" class="dot" style="background-color: #D40C00;"><img class="subject_image" src="images/biology@4x.png"></span>BIOLOGY</div>
+    <div class="subject" id="subject-all" onclick = "make_ALL_talk_list();"><span class="subject-all"></span>ALL</div>
+    <div class="subject" id="subject-astronomy" onclick = "make_talk_list('astronomy');"><span class="dot" style="background-color: #682CBF;"><img class="subject_image" src="images/astronomy@4x.png"></span>ASTRONOMY</div>
+    <div class="subject" id="subject-quantum" onclick = "make_talk_list('quantum');"><span  class="dot" style="background-color: #3E49BB;"><img class="subject_image" src="images/quantum@4x.png"></span>QUANTUM</div>
+    <div class="subject" id="subject-particle" onclick = "make_talk_list('particle');"><span  class="dot" style="background-color: #526EFF;"><img class="subject_image" src="images/particle@4x.png"></span>PARTICLE</div>
+    <div class="subject" id="subject-materials" onclick = "make_talk_list('materials');"><span  class="dot" style="background-color: #32C12C;"><img class="subject_image" src="images/materials@4x.png"></span>MATERIALS</div>
+    <div class="subject" id="subject-mathematics" onclick = "make_talk_list('mathematics');"><span  class="dot" style="background-color: #FFEF00;"><img class="subject_image" src="images/mathematics@4x.png"></span>MATHS</div>
+    <div class="subject" id="subject-chemistry" onclick = "make_talk_list('chemistry');"><span  class="dot" style="background-color: #FF5500;"><img class="subject_image" src="images/chemistry@4x.png"></span>CHEMISTRY</div>
+    <div class="subject" id="subject-biology" onclick = "make_talk_list('biology');"><span class="dot" style="background-color: #D40C00;"><img class="subject_image" src="images/biology@4x.png"></span>BIOLOGY</div>
   </div>
   </div>
 
@@ -61,6 +66,8 @@
     <div id="talk_info">
       <div id="talk_speaker"></div>
       <div id="talk_date"></div>
+      <div id="talk_website"></div>
+      <div id="talk_zoom"></div>
       <div id="talk_title"></div>
       <div id="talk_abstract"></div>
     </div>
@@ -73,7 +80,15 @@
   <div id="footer_container">
   <div id="footer">
 
-<div id="vertical-stripes"></div>
+    <div class="footer_section"><h3> KEEP UP-TO-DATE</h3><p>If you wish to keep up-to-date with our lecture series, and to recieve reminders about upcoming lectures and events, please fill in our keep-in-touch form for the general public.</p></div>
+
+    <div class="footer_section"><h3> CONTACT</h3><p>You can contact us by email at: </p></div>
+
+    <div class="footer_section"><h3> SOCIAL</h3><p>Follow us on social media:</p>
+      <a href="https://www.youtube.com/channel/UC0EJg0QOaBzolMegQFd5Xww"><img class="footer_social_logo" src="images/social/yt_icon_mono_dark.png"></a>
+      <a href="https://www.facebook.com/sussexuniverse/"><img class="footer_social_logo" src="images/social/f_logo_RGB-White_58.png"></a>
+    </div>
+
 
     <br>
     <br>
